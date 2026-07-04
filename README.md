@@ -32,6 +32,15 @@ wymaga ponownego wgrania skilla:
 > aktualizacje pobierają się komendą `/plugin update` bezpośrednio z tego
 > repozytorium, bez ręcznego pobierania ZIP-a.
 
+## Pytania startowe widoczne "na głównej stronie" (opcjonalnie)
+
+Sam Skill nie ma żadnego UI ani listy pytań startowych — uruchamia się
+niewidocznie, gdy Claude uzna pytanie za związane z prawem medycznym.
+Jeśli chcesz, aby użytkownicy widzieli gotowe, klikalne pytania od razu po
+otwarciu czatu, potrzebny jest dodatkowo **Claude Project** — to jedyne
+miejsce w Claude, gdzie taka funkcja ("conversation starters") istnieje.
+Instrukcja połączenia obu elementów: `project-starters/README.md`.
+
 ## Struktura repozytorium
 
 ```
@@ -39,6 +48,10 @@ lexora-legal-skill/
 ├── SKILL.md                              # rola, workflow, ograniczenia, mapa referencji
 ├── assets/
 │   └── lexora-logo.jpeg
+├── project-starters/                     # opcjonalna nakładka: Claude Project + starter questions
+│   ├── README.md
+│   ├── description.md
+│   └── conversation-starters.md
 └── references/
     ├── wiarygodne-zrodla.md              # hierarchia źródeł + strategia wyszukiwania
     ├── ustawa-o-policji.md               # wstęp Policji do placówek medycznych

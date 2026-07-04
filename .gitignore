@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Packaged/build artifacts (regenerate from source, don't commit)
+*.zip
+*.skill
+dist/
+build/
+
+# Logs
+*.log
+
+# Env / secrets (in case an API wrapper is added later)
+.env
+.env.*
+*.key
+
+# Python (in case scripts/ is added later)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (in case tooling is added later)
+node_modules/
